@@ -1,0 +1,14 @@
+currentLocale(l: Locale)?
+selectedProject(sp: Project)?
+
+labels = {
+    p: Project, p.enabled, translation(p, l, t)?
+    Text[
+        value = t.name,
+        style = {p == sp, "bold"}].
+}
+
+Container[
+    style = "toc",
+    root = Row[
+        children = labels]].
