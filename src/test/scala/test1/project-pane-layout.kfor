@@ -1,8 +1,0 @@
-each(p: Project), currentLocale(l: Locale), translation(p, l, t)?
-Container[
-    style = "project",
-    root = Column[
-        children = (
-            Title[value := t.name],
-            Text[value = "Description: " + t.shortDescription, style = "subtitle"],
-            Text[p.details] )]].

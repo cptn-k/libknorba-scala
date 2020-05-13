@@ -1,9 +1,0 @@
-service co.mscp.website.data:
-    LocalizedProject is record (name, shortDescription, details, gallery: grid(1) of string, picture).
-    Project is record (key, number: integer, isEnabled: truth).
-    IndexItem is record (key, name, locale).
-    owner is relation (p: Project, owner: String).
-    translation is relation (project: Project, locale: String, value: LocalizedProject).
-
-service co.mscp.website.layout:
-    Title is record like cube.layout.Text(style := "title").
