@@ -17,7 +17,7 @@ class KnoisParserTest extends AnyFunSuite {
     val services = new KnoisParser(builder.buildWalker).readServices
     services.foreach(println(_))
     assert(services.length == 1)
-    testService(services(0))
+    testService(services.head)
   }
 
   private def testService(s: Service): Unit = {

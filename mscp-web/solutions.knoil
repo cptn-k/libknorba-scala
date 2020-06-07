@@ -1,0 +1,40 @@
+Solution (
+    id is "kn",
+    locale is "en_US",
+    name is "KnoRBA",
+    shortDescription is """
+        |Agent-based distributed and parallel computing technology
+        """
+    details is Article(
+
+).
+
+Solution(
+    id is "tc",
+    locale is "en_US",
+    name is "The Cube",
+    shortDescription is """
+        |Versatile component-driven web UI and dynamic content development
+        |and rendering platform
+        """
+).
+
+Solution(
+    id is "kf",
+    locale is "en_US",
+    name is "KFoundation",
+    shortDescription is """
+        |C++ re-imagined with no pointers, modern collections,
+        |parallelism, unicode, net IO; also in Scala and Java
+        """
+).
+
+Solution(
+    id is "md",
+    locale is "en_US",
+    name is "Mediall",
+    description is """
+        |Revolutionary and affordable inpatient flow automation and
+        |telemedicine suit for small clinics
+        """
+).

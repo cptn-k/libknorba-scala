@@ -1,0 +1,10 @@
+Given l is Locale where (language is "en", and dialect is "US"), {
+    GroupML[l, "solutions" , "Solutions"].
+    GroupML[l, "consumer"  , "Consumer Products"].
+    GroupML[l, "technology", "Open-Source Technologies"].
+    GroupML[l, "resources" , "Resources"].
+    GroupML[l, "company"   , "The Company"].
+
+    ItemML[l, "c_mission", "Mission", "Mindscape's mission and values"].
+    ItemML[l, "c_info", "Basic Facts", "Location, executives, etc."].
+}

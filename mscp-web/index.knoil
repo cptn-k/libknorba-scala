@@ -1,0 +1,22 @@
+using co.mscp.website.
+
+Given s is_a Solution,
+then i is Item where (id is "s_${s.id}", and link is "Solution?id=${s.id}"),
+and there is ItemML[i, s.locale, s.name, s.shortDescription],
+and there is i.
+
+There is Index where (items are (
+    Group(id is "solutions", and items are (
+        Group(id is "consumer", and items are Item having id=="s_md"),
+        Group(id is "technology", and items are (
+            Item(id=="s_tc")? | Item(id=="s_kn")? | Item(id=="s_kf")?
+        )))),
+    Group(name is "resources", and items are (
+        Item(id is "r_press", and link is "Press"),
+        Item(id is "r_doc", and link is "Documentation"),
+        Item(id is "r_video", and link is "Video"))),
+    Group(name is "company", and items are (
+        Item(id is "c_mission", link is "Article?id=company_mission"),
+        Item(id is "c_info", link is "Article?id=company_info"),
+        Item(id is "c_contact", link is "Article?id=company_contact")))
+)).
